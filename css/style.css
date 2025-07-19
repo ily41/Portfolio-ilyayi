@@ -1,0 +1,781 @@
+
+
+/* * {
+    div {
+    border:1px solid red;
+    }
+} */
+
+body {
+    background: url("../img/body-bg.png");
+}
+header {
+    background-attachment:fixed;
+    background: url(../img/headerbg.png) ;
+    background-position: 38% 10%; 
+    background-size: 190%;
+    background-repeat: no-repeat; 
+    
+}
+
+.textuppercase {text-transform: uppercase;}
+
+
+.navcontainer {
+    padding-top:25px;
+    background-color: black;
+    height: 12vh;
+}
+nav {
+    width: 80%;
+    display: flex;
+    margin-left:40px;
+    justify-content:space-between;
+    height: 7vh;
+}
+
+.menucontainer {
+    display: flex;
+    height: 33vh;
+    background-color: black;
+}
+.navigation {
+    height: 20vh;
+}
+
+.menucontainer hr {width: 100%;height: 1.5px; background-color: #2F2F2F}
+
+menu {
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap:10px;
+    width: 80%;
+}
+#menucont {
+    display: none;
+}
+menu a {
+    font-family: "rubik",sans-serif;
+    color:white;
+    display: inline-flex;
+}
+menu a:hover {
+    color:    rgb(68, 88, 220);
+}
+#logo {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+
+#hamburger {
+    padding-top:7px;
+    width: 50px;
+    height: 50px;
+}
+
+.headermain {
+    margin-top:70px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+
+}
+.headermain img {display: none; object-fit: contain;}
+.headertext {
+    max-width: 600px ;
+    position: relative;
+    bottom:70px;
+    right:35px;
+    font-family: "rubik",sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-left:50px;
+}
+.buttons a {
+    display: inline-flex;
+   
+    justify-content: center;align-items: center;
+    margin-right:20px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:white;
+}
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#headerFirstButton {
+    border:none;
+    background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    
+}
+#headerSecondButton {
+    border: 3px solid #854fee;
+    color:black;
+}
+#downloadcv {
+    display: flex;
+    justify-content: center;align-items: center;
+    background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee); 
+    width: 170px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:white;
+    font-family: "Rubik",sans-serif;
+    font-size: 14px;
+}
+#downloadcv:hover {
+    transition: 0.5s;
+    background: initial;
+    border: 3px solid #854fee;
+    color:black;
+}
+
+#headerFirstButton:hover {
+    transition: 0.5s;
+    background: initial;
+    border: 3px solid #854fee;
+    color:black;
+
+    
+}
+#headerSecondButton:hover {
+    transition: 0.5s;
+    background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    border:none;
+    color:white;
+}
+.headermain h1 {
+    font-size: 60px;
+    font-weight: 500px;
+}
+h3 {
+    font: 2.5em "Rubik",sans-serif;
+    font-weight: 700;
+}
+ h4 {
+    font: 20px "Rubik",sans-serif;
+    font-weight: 500;
+}
+
+#secondText {
+    max-width: 366px;
+    margin-left: 0px;
+
+}
+
+.registration {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:18px;
+}
+
+.subscription {
+    max-width: 510px;
+    height: 348px;
+    background: url("../img/subscribe-bg.png");
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription p {
+    margin: 18px 0 18px 0;
+}
+
+.subscription h2 {
+    font: 30px "Rubik",sans-serif;
+    font-weight: 700;
+    color:white;
+}
+.subscription p {color: white!important;;}
+.subscription input {
+    width: 380px;
+    height: 45px;
+    background: transparent;
+    border:1px solid white;
+    border-radius: 3px;
+}
+
+
+.subscription button {
+    font:14px "Rubik",sans-serif;
+    width: 140px;
+    height: 45px;
+    border:1px solid rgb(34,34,34);
+    border-radius: 3px;
+    color: rgb(34,34,34);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+
+
+.btn:hover {
+    cursor:pointer;
+}
+
+
+
+
+.wrapContainer {
+    display: block;
+    flex-wrap: nowrap;
+}
+
+.imgdiv {
+    margin: 1vh auto 1vh auto;
+    display: flex;justify-content: center;align-items: center;
+    width: 168px;height: 10vh; 
+    height: 98px;
+    background-color: #FBFBFF;
+    object-fit: contain;
+
+
+}
+.imgdiv:hover {
+
+    transform:  1s ease 0s;
+    transition: 0.7s;
+    box-shadow:  10px 10px 7px rgb(245, 244, 244);
+    
+    
+    background-color: #FFF;
+}
+.imgdiv:hover img {-webkit-filter:brightness(0%);transition: 0.7s;}
+.experience {width: 80%; text-align:center;margin:auto;}
+.experience h1 {
+    /* display: inline-block; */
+    font: 100px "Rubik";
+    font-weight: 700;
+    color:rgb(133, 79, 238);
+}
+.call {margin:50px 0 50px 0}
+.ten {margin-top:50px;}
+.call i {font-size:60px}
+.call #f{font: "Roboto"; color: rgb(133, 79, 238);}
+.call #s {font: 24px  "Roboto"; font-weight: 500;}
+.experience p {
+    display: inline-block;
+    font: 20px "Rubik";
+}
+
+.serviceOffers {
+    text-align: center;
+    width: 80%;
+    margin:auto;
+}
+
+.itcards {
+    width: 75%;
+    margin:auto;
+    margin-top: 70px;
+    margin-bottom:200px;
+    
+}
+.itcards .card {
+    text-align: center;
+    margin-top:10px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    height: 45vh;
+    background-color: #F9F9FD;
+    width: 100%;
+    gap:30px;
+}
+.itcards img {width: 70px; height: 70px; object-fit: contain;}
+.qualitywork {
+    width: 90%;
+    margin:auto;
+}
+swiper-container {display: block !important;}
+.mySwiper {display: block !important; width: 70%; box-shadow: 5px 5px 10px rgb(245, 244, 244);}
+
+
+.menujs a {display: inline-block; margin-right: 30px;}
+.menujs {
+    margin-bottom: 50px;
+    width: 100% ;
+    
+
+}
+.menujscont {
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapport {
+    
+    width: 100%;
+
+}
+.qualitywork {
+    margin: auto;
+    max-width: 540px;
+}
+
+
+.plusrel {
+    position: relative;
+}
+.plusabs {
+    position: absolute;
+    top:-50%;
+    left:-50%;
+    scale:0.3;
+    transition: 0.7s;
+    opacity:0%;
+}
+
+.plusrel:hover .plusabs {
+    transition: 0.7s;
+    opacity:100%;
+    top:0;
+    left:0;
+}
+
+.overlay {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 99%;
+    background:none;
+}
+.overlay:hover {
+    background: rgba(77, 87, 222, 0.5);
+    transition: 0.7s;
+}
+.overlay:hover .plusabs {
+    transition: 0.7s;
+    opacity:100%;
+}
+
+
+.filter img {
+    width: 100%;
+}
+.filter {margin: 2vh 0 2vh 0;}
+
+
+
+.wrapport a {
+    font: 20px "rubik",sans-serif;
+    font-weight: 500;
+}
+
+swiper-container {
+    
+    height: 40vh;
+    margin-bottom: 150px;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.willdel {
+    display: none;
+}
+  
+
+
+
+.footersFoot {
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.child {
+    margin:20px 0;
+}
+.footersFoot h5 {
+    font: 20px "Rubik",sans-serif;
+    font-weight:500;
+}
+.footersFoot i {
+    font-size:22px;
+    color:rgb(119, 119, 119);
+}
+.footicons {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+.pageHeaders {
+    
+    color:white;
+    margin: auto;
+    width: 60%;
+    height: 50vh;
+    background: url(../img/subscribe-bg.png);
+    display: flex;justify-content: center;align-items: center; flex-direction: column;
+    margin-top: 150px;
+    
+}
+.pageHeaders h1 {
+    font: 54px "Rubik",sans-serif;
+    font-weight: 700;
+    
+}
+.pageHeaders p {
+    font-family: "Roboto",sans-serif;
+}
+.aboutwrap {
+    height: 100vh;
+}
+
+.ten img {display: none;}
+
+
+.cardh {
+    display: block;
+    
+}
+.cardh img {
+    margin:auto;
+}
+
+
+@media (max-width:400px) {
+    .call {
+        margin:100px 0 100px 0;
+    }
+    .ten {
+        margin:100px 0 100px 0;
+    }
+    .headermain {
+        display: block;
+        width: 300px;
+        margin:180px auto 0 auto;
+               
+    }
+    /* .subscription input {
+            width: 300px;
+    } */
+
+    #secondText {
+        display: block;
+        margin-left:60px;
+        
+    }
+    #secondmain {
+        height: 100vh;
+    }
+
+    #secondText p {
+        padding: 10px 0 10px 0;
+    }
+}
+
+.clients {
+    text-align: center;
+    margin-bottom: 100px;
+    max-width: 768px;
+    margin: 100px auto 100px auto;
+    
+}
+
+.slider {
+    display: flex;
+}
+
+
+.cardh img {
+    width: 130px;
+    height: 130px;
+}
+
+.cardh h4 {margin-bottom: 15px; text-transform: uppercase;}
+span {display: flex; align-items: center;}
+.headertext hr {
+    width: 100%;
+    height: 3px;
+    background-color:black; 
+    display:inline-block;
+}
+.ptext p {
+    font:15px "Roboto",sans-serif;
+    color:rgb(119, 119, 119);
+}
+.menujs a {
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+}
+@media (min-width:1180px) {
+    #secondtext {
+    margin-left:200px;
+    }
+}
+
+@media(min-width:570px) {
+    .wrapContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin:auto
+    }
+    .imdiv {
+        margin:1vh;
+    }
+}
+@media (min-width:768px) {
+    .menujs {
+        display: flex;
+    justify-content: start;
+    width: 1140px ;
+    }
+    #hamburger {
+        display: none;
+    }
+    nav {width: initial;}
+
+
+    .wrapport {
+        display: flex;
+        flex-wrap:wrap;
+        width: initial;
+        justify-content: space-between;
+    }
+    .qualitywork h3 {padding-left:15px}
+
+
+    
+     .filter3 {transform: translateY(-5vh); transition: 0.4s ;}
+    .filter5 {transform: translateY(-5vh); transition: 0.4s ;}
+    .filter7 {transform: translateY(-17vh); transition: 0.4s ;}
+   .filter9 {transform: translateY(-10vh); transition: 0.4s ;}
+
+
+    .menujs {padding-left:15px}
+    .filter img {width: 330px;}
+    .filter { width: 330px;}
+    .qualitywork {
+        max-width: 690px;
+    }
+    .filter {display: flex;flex-direction: column;}
+    .navigation {
+        height: 12vh;
+        display: flex;  
+        justify-content: space-around;
+        width: 100%;
+        position: fixed;
+        top:0px;
+        z-index: 9;
+        box-shadow: 2px 2px 10px rgb(231, 231, 231);
+
+        background-color: white;
+    }
+    #menucont hr {display: none;}
+    .navcontainer {background-color: initial;}
+    #menucont {
+        background-color: initial;
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        }
+    menu {
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+        width: 80%;
+    }
+     menu a {
+        color:black;
+     }
+.headertext {width: 45%; margin-left: 100px;}
+header {
+    background-attachment:fixed;
+    background: url(../img/headerbg.png) ;
+    background-position: 30% 10%; 
+    background-size: 160%;
+    background-repeat: no-repeat; 
+}
+.headermain img {display: block; height: 40vh;width: 100%;}
+.headermain { margin-top:180px;}
+.headerpcman {
+    height: 50vh;width: 70%; object-fit: contain;
+}
+
+
+#secondtext {
+    margin-left: 0px;
+}
+
+#secondphoto {
+    object-fit: contain;
+    width: 400px;
+    margin-right: 100px;
+}
+
+.cardh {
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(245, 244, 244);
+    padding:20px;
+    gap:14px;
+}
+.mySwiper {
+    width: 770px;
+    height: 25vh;
+    margin:auto;
+    margin:10vh auto 10vh auto;
+    box-shadow: none;
+}
+
+.slider {
+    margin-bottom: 100px;;
+}
+
+.registration {
+    display: flex;
+    flex-direction: row;
+}
+.subscription {text-align: center;}
+.experience {
+    width: 600px;
+    justify-content: center;align-items: center;
+}
+
+.call {
+    display: flex;
+}
+
+.subscription {
+    max-width: 690px;
+    height: 479px;
+}
+
+.wrapAndExperience {
+    display: flex;
+    max-width: 900px;
+    margin:auto;
+    gap:100px;
+}
+.ten {
+    display: flex;
+    position: relative;
+   
+}
+.ten h1 {z-index: 3;}
+.ten p{
+    margin:20px 0 0 10px;
+
+}
+.ten  img {
+    position: absolute;
+    display: block;
+    left:-82.5px;
+    top:-32.5px;
+}
+.wrapContainer{
+    width: 1250px;}
+
+
+.serviceOffers {
+    margin:auto;
+    margin-top: 100px;
+    width: 50%;
+    
+}
+
+.itcards .card {width: 25%; }
+.itcards {justify-content: center; display: flex; gap:30px; width:768px;}
+.card:hover {
+ transition: 0.5s;
+ background-color:white;
+ box-shadow:0px 8px 30px rgba(118, 85, 225, 0.15)
+}
+
+.aboutwrap {
+    height: 40vh;
+}
+}
+
+.active {color:rgb(133, 79, 237)}
+
+
+@media (min-width:990px) {
+    .qualitywork {
+        max-width:960px;
+    }
+    .filter {
+        width: 290px;
+    }
+    .filter img {
+        width: 290px;
+    }
+    
+
+    .filter3 {transform:initial}
+    .filter5 {transform:initial}
+    .filter7 {transform:initial}
+   .filter9 {transform: initial}
+
+   .filter4 {transform: translateY(-5vh); transition: 0.4s ;}
+    .filter6 {transform: translateY(-5vh); transition: 0.4s ;}
+    .filter7 {transform: translateY(-17vh); transition: 0.4s ;}
+    .filter8 {transform: translateY(-10vh); transition: 0.4s ;}
+
+    .subscription {
+        max-width: 930px;
+        height: 479px;
+    }
+    
+}
+
+
+
+
+@media (min-width:1117px) {
+    .headertext {width: 40%;}
+    .headermain img {display: block; width: 550px;
+        height: 550px;}
+    .headerpcman {
+    width: 550px;
+    height: 550px;
+    
+        
+    }
+    .itcards{width: 80%; gap:30px}
+    #secondmain {
+        justify-content: center;
+        gap:200px
+    }
+    #secondText {
+        max-width: 366px;
+        margin-left: 100px;
+    }
+    .headermain {justify-content: center;}
+}
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-
+    ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header style = "background: initial;">
+
+        <div class="navigation">
+            <div class="navcontainer">
+            <nav>
+                <img id = "logo" src="./img/logo.png" alt="">
+                <img id = "hamburger" src="./img/Hamburger_white.png" onclick="myFunction()" alt="">
+            </nav>
+        </div>
+        <div class="menucontainer" id = "menucont">
+            <menu >
+                <a class = "btnmain" onclick="handleMainButtonClick()" href="index.html">Home</a>
+            <hr>
+            <a class = "btnmain" onclick="handleMainButtonClick()"  href="about.html">About</a>
+            <hr>
+            <a class = "btnmain active" onclick="handleMainButtonClick()"  href="services.html">Services</a>
+            <hr>
+            <a class = "btnmain"  href="">Portfolio</a>
+            <hr>
+            <a class = "btnmain" href="">Pages</a>
+            <hr>
+            <a class = "btnmain" href="">Blog</a>
+            <hr>
+            <a class = "btnmain" href="">Contact</a> 
+            </menu>
+        </div>
+    </div>
+
+        <div class="pageHeaders ">
+        <h1>Services</h1>
+        <p>Home - Services</p>
+
+        
+    </div></header>
+    <main>
+        <div class="serviceOffers ptext">
+            <h3 class = "textuppercase" style = "margin-bottom: 30px;">service offers</h3>
+            <p>Is give may shall likeness made yielding spirit a itself togeth created after sea
+                is in beast beginning signs open god you're gathering ithe</p>
+        </div>
+        <div class="itcards">
+            <div class="card ptext">
+                <img src="./img/mouse.png" alt="">
+                <h4 class  = "textuppercase">wp developing</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+            </div>
+            <div class="card ptext">
+                <img src="./img/ui.png" alt="">
+                <h4 class  = "textuppercase">ui/ux design</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+
+            </div>
+            <div class="card ptext">
+                <img src="./img/web.png" alt="">
+                <h4 class  = "textuppercase">web design</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+
+            </div>
+            <div class="card ptext">
+                <img src="./img/seo.png" alt="">
+                <h4 class  = "textuppercase">seo optimize</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+            </div>
+        </div>
+    <div class="qualitywork">
+        <h3 id  = "firsth" class = "textuppercase" style = "font-size: 36px; display: none;">
+            quality work</h3>
+        <h3 id  = "secondh" class = "textuppercase" style = "margin-bottom: 100px;  display: none;"> Recently done project</h3>
+        <div class = "textuppercase menujs" style = " display: none;">
+            <a class = "btn active" >all</a>
+            <a class = "btn popular" >popular</a>
+            <a class = "btn latest" >latest</a>
+            <a class = "btn upcoming" >following</a>
+            <a class = "btn following" >upcoming</a>
+        </div>
+    </div>
+    
+<div class="clients ptext ">
+    <h3>Client say about me</h3>
+    <p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast
+        beginning signs open god you're gathering ithe</p>
+</div>  
+<swiper-container class="mySwiper" init="false">
+    <swiper-slide>
+      <div class="slider">
+        <div class="cardh willdel">
+            <img src="./img/dude.jpg" alt="">
+            <div class="cardhtext ptext">
+                <h4>Elite martin</h4>
+                <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+            </div>
+        </div>
+        <div  class="cardh">
+            <img src="./img/otherdude.jpg" alt="">
+            <div class="cardhtext ptext">
+                <h4>Davil Saden</h4>
+                <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+            </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide><div class="slider">
+        <div class="cardh">
+            <img src="./img/dude.jpg" alt="">
+            <div class="cardhtext ptext">
+                <h4>Elite martin</h4>
+                <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+            </div>
+        </div>
+        <div class="cardh willdel">
+            <img src="./img/otherdude.jpg" alt="">
+            <div class="cardhtext ptext">
+                <h4>Davil Saden</h4>
+                <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+            </div>
+        </div>
+      </div></swiper-slide>
+    <swiper-slide><div class="slider">
+        <div class="cardh willdel">
+            <img src="./img/dude.jpg" alt="">
+            <div class="cardhtext ptext">
+                <h4>Elite martin</h4>
+                <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+            </div>
+        </div>
+        <div class="cardh">
+            <img src="./img/otherdude.jpg" alt="">
+            <div class="cardhtext ptext">
+                <h4>Davil Saden</h4>
+                <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+            </div>
+        </div>
+      </swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </main>
+
+    
+    
+   
+    
+
+    
+        
+
+
+        
+         
+    </main>
+    <footer>
+        
+        <div class="subscription ptext">
+            <h2 class = "uppercase">Get update from anywhere</h2>
+            <p>Bearing Void gathering light light his eavening unto dont afraid.</p>
+            <div class="registration">
+            <input class = "bg-transparent" type="email">
+            <button><a href="">Get started</a></button>
+        </div>
+        
+        </div>
+        <div class="footersFoot ptext">
+            <img class = "child" src="./img/logo.png" alt="">
+            <h5 class = "child textuppercase">Follow me</h5>
+            <div class="footicons child">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-dribbble"></i>
+                <i class="fa-brands fa-behance"></i>
+            </div>
+            <p class = "child">Copyright ©2025 All rights reserved | This template is made with  by <a style = "color:#854fee" href="https://colorlib.com">Colorlib</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
